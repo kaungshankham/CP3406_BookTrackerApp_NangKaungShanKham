@@ -42,6 +42,6 @@ class BookViewModel(private val repository: BookRepository) : ViewModel() {
     }
 
     fun getBooksByStatus(status: String) = repository.getBooksByStatus(status)
-    fun getAllBooks() = repository.getAllBooks() // ✅ New method to fetch all books
+    fun getAllBooks() = repository.getAllBooks()
     fun getBookById(id: String): Flow<BookEntity> = repository.getBookById(id)
 }
