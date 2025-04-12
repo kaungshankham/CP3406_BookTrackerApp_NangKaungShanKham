@@ -21,5 +21,5 @@ interface BookDao {
     fun getBooksByStatus(status: String): Flow<List<BookEntity>>
 
     @Query("SELECT * FROM books WHERE id = :id LIMIT 1")
-    fun getBookById(id: String): Flow<BookEntity> // ✅ Added to support book detail screen
+    fun getBookById(id: String): Flow<BookEntity>
 }
