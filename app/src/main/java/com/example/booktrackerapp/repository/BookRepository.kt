@@ -9,7 +9,7 @@ class BookRepository(private val bookDao: BookDao) {
     // ROOM
     suspend fun insertBook(book: BookEntity) = bookDao.insertBook(book)
     suspend fun updateBook(book: BookEntity) = bookDao.updateBook(book)
-    fun getAllBooks() = bookDao.getAllBooks() // ✅ Return all books for unified screen
+    fun getAllBooks() = bookDao.getAllBooks()
     fun getBooksByStatus(status: String) = bookDao.getBooksByStatus(status)
     fun getBookById(id: String) = bookDao.getBookById(id)
 
