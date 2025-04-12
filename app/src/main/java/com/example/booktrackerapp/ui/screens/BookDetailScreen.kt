@@ -97,7 +97,7 @@ fun BookDetailScreen(
                 status = status
             )
             viewModel.updateBook(updatedBook)
-            onBack(status) // Pass updated status
+            onBack(status)
         }) {
             Text("Save Changes")
         }
